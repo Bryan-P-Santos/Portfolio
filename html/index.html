@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryan Pires</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/sytle.css">
+
+  <!-- CSS do banner -->
+  <style>
+    .banner {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #0b0b24 0%, #000 70%);
+      display: flex;
+    }
+
+    #bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+    }
+    .conteudo h1 { font-size: clamp(2rem, 6vw, 4rem); }
+  </style>
+  
+</head>
+
+<body id="topo" >
+
+  <canvas id="bg"></canvas>
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <video autoplay muted loop playsinline class="logo-video">
+          <source src="/treinos/primeiro/video/logo.mp4" type="video/mp4">
+        </video>
+        <span class="logo-name">Bryan Pires</span>
+      </div>
+      <div class="nav-links">
+        <a href="#sobre">About</a>
+        <a href="#passion">Passion</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#footer_contacts">Contact</a>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <section class="hero">
+     <h1>Bryan Pires</h1>
+      <p>I'm a Full Stack Developer passionate about creating innovative web solutions.</p>
+      <a href="https://github.com/Bryan-P-Santos" class="btnG">GITHUB</a>
+    </section>
+
+    <!-- ? SOBRE -->
+    <div id="sobre" class="sobre fade-in">
+      <h1 id="sobre-h1">A LITTLE BIT ABOUT ME</h1>
+      <img src="../img/foto%20perfil.jpeg" alt="Foto de perfil do Bryan" class="foto-p">
+      <p id="sobre-p">
+        Hey! My name is Bryan and I'm a Full Stack developer with a passion for programming, design and technology. I'm currently in high school at <strong >ETEC Taboão da Serra</strong>, where I've been deepening my knowledge of software development, web technologies and computer science. I have experience with <strong >HTML, CSS, JavaScript, C#, Java, Python and SQL</strong>, as well as database modeling and 3D modeling. I enjoy creating complete projects, from modern and responsive interfaces to the logic, databases and systems behind them. I'm always looking to improve my skills, explore new technologies and turn ideas into real and functional solutions.
+      </p>
+
+      <div class="icons-s">
+        <div class="icon-item">
+         <a href="https://etects.cps.sp.gov.br" ><i class="fa-solid fa-pen"></i> </a> 
+          <span class="icon-text">Etec</span>
+        </div>
+      </div>
+
+      <div id="passion" class="passion">
+        <div class="passion-text"></div>
+
+        <div class="foto-pa1">
+          <img src="../img/html.png" alt="HTML" class="foto-pa">
+          <img src="../img/css.png" alt="CSS" class="foto-pa">
+          <img src="../img/js.png" alt="JavaScript" class="foto-pa">
+          <img src="../img/C.png" alt="C#" class="foto-pa">
+          <img src="../img/Python.png" alt="Python" class="foto-pa">
+          <img src="../img/sql.png" alt="SQL" class="foto-pa">
+        </div>
+      </div>
+
+      <div id="experience" class="experience"></div>
+
+      <div id="work" class="work"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="footer_content">
+
+      <div id="footer_contacts">
+        <div id="footer_text">
+          <img src="/projetoSiteAv/img/logo.png" alt="Logo" id="footer_logo">
+          <h1>Logo</h1>
+        </div>
+
+        <p>Your dreams can always come true</p>
+
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/veteryx_/" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/Veteryx" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/Bryan-P-Santos" class="footer-link" id="github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="footer-link" id="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li><h3>About</h3></li>
+        <li><a href="#" class="footer-link">Latest Projects</a></li>
+        <li><a href="#" class="footer-link">Produced in room</a></li>
+      </ul>
+
+      <ul class="footer-list">
+        <li><h3>Skills</h3></li>
+        <li><a href="#" class="footer-link">HTML / CSS / JS</a></li>
+        <li><a href="#" class="footer-link">JAVA / MySQL / C#</a></li>
+        <li><a href="#" class="footer-link"> GIT / Python</a></li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Contact</h3>
+        <p>Want to contact me?</p>
+        <a href="mailto:bryanpires2309@email.com" id="email_box">
+          <i class="fa-regular fa-envelope"></i> bryanpires2309@email.com
+        </a>
+      </div>
+
+    </div>
+
+    <a href="#topo" id="back-to-top" title="Back to home">
+      <i class="fa-solid fa-arrow-up arrow"></i>
+    </a>
+
+    <div id="footer_copyright">
+      &#169; 2025 Bryan Pires. - All rights reserved.
+    </div>
+  </footer>
+
+
+  <script>
+    const canvas = document.getElementById('bg');
+    const ctx = canvas.getContext('2d');
+    let w, h, cx, cy;
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cx = w / 2;
+      cy = h / 2;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    const TOTAL = 867;        // quantidade de partículas
+    const RAIO_MIN = 40;      // raio do "horizonte de eventos"
+    const INCLINACAO = 0.67;  // achata a órbita 
+
+    const maxR = () => Math.max(w, h) * 0.6;
+
+    function criar(inicial) {
+      return {
+        ang: Math.random() * Math.PI * 2,
+        r: inicial ? RAIO_MIN + Math.random() * (maxR() - RAIO_MIN) : maxR(),
+        tam: Math.random() * 1.5 + 0.3,
+        hue: 200 + Math.random() * 60   // tons de azul/roxo
+      };
+    }
+
+    const particulas = Array.from({ length: TOTAL }, () => criar(true));
+
+    function animar() {
+      // ao invés de limpar tudo, escurece 
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      ctx.fillRect(0, 0, w, h);
+
+      for (const p of particulas) {
+        p.ang += (60 / p.r) * 0.03;           
+        p.r -= 0.25 * (1 + 100 / p.r);       
+
+        if (p.r < RAIO_MIN) Object.assign(p, criar(false));
+
+        const x = cx + Math.cos(p.ang) * p.r;
+        const y = cy + Math.sin(p.ang) * p.r * INCLINACAO;
+
+        const brilho = Math.min(1, 120 / p.r + 0.2);
+        ctx.fillStyle = `hsla(${p.hue}, 90%, 70%, ${brilho})`;
+        ctx.beginPath();
+        ctx.arc(x, y, p.tam, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // buraco negro
+      const g = ctx.createRadialGradient(cx, cy, RAIO_MIN * 0.6, cx, cy, RAIO_MIN * 1.4);
+      g.addColorStop(0, 'rgba(0,0,0,1)');
+      g.addColorStop(0.7, 'rgba(0,0,0,1)');
+      g.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(cx, cy, RAIO_MIN * 1.4, 0, Math.PI * 2);
+      ctx.fill();
+
+      requestAnimationFrame(animar);
+    }
+    animar();
+    window.addEventListener('scroll', () => {
+  canvas.style.opacity = Math.max(0.25, 1 - scrollY / (innerHeight * 0.8));
+});
+  </script>
+
+</body>
+</html>
